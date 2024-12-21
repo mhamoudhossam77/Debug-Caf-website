@@ -1,42 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Coffee Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css">
-</head>
-<body>
-  <!--tool bar-->
-  <header class="navbar">
-    <div class="logo">
-      <img src="C:\Users\CA\Documents\GitHub\Debug-Caf-website\images\Logo-removebg-preview.png" 
-           alt="Logo" class="logo-img">
-      <span>Debug Cafè</span>
-    </div>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Menu</a></li>
-              <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debug Cafè</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1><span class="highlight">Exceptional Coffee </span><br>Debug your code with our Exceptional Coffee!</h1>
-      <p>Welcome to Debug café with the strongest experience with a robot waiter where every bean tells a story .</p>
-      <div class="buttons">
-        <a href="#" class="btn contact">Contact Us</a>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Playwrite+NL+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scroll-animation.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="images/Logo-removebg-preview.png"
+          alt="Logo"
+          class="logo-img"
+        />
+        <span>Debug Cafè</span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Content merged -->
+    <div id="content">
+      <!-- Hero Section -->
+      <div class="hero" id="home">
+        <div class="hero-content">
+          <h1>
+            <span class="highlight">Exceptional Coffee </span><br />Debug your
+            code with our Exceptional Coffee!
+          </h1>
+          <p>
+            Welcome to Debug café with the strongest experience with a robot
+            waiter where every bean tells a story.
+          </p>
+          <div class="buttons">
+            <a href="#contact" class="btn contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="images/robut (home ) -removebg-preview.png"
+            alt="Coffee Cup"
+          />
+        </div>
+      </div>
+      <div class="section-separator"></div>
+
+      <!-- About Us Section -->
+      <div class="about-section" id="about">
+        <div class="image-container">
+          <img
+            src="images/about us 222-removebg-preview.png"
+            alt="Two people enjoying coffee"
+          />
+        </div>
+        <div class="text-container">
+          <h1>About Us</h1>
+          <p>
+            Welcome to Debug Café, the place where technology meets good taste!
+            Enjoy an unforgettable cafe experience with a robot always at your
+            service with a distinctive atmosphere inspired by the world of
+            robotics and modern technology, where innovation meets comfort.
+            Whether you are looking for the perfect start to your day or a place
+            to cheer you up with a warm cup of coffee, we offer the most
+            delicious hot and cold foods and drinks to suit all tastes. From
+            freshly baked goods to light breakfasts, from your favorite coffee
+            to refreshing drinks, we have everything you need to start your day
+            or add a moment of relaxation to your busy day. Debug café is your
+            favorite destination to enjoy and harmonize your time with 5-star
+            service with robots!
+          </p>
+          <div class="social-icons">
+            <a href="#" class="icon facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="section-separator"></div>
+
+      <!-- Menu Section -->
+
+      <div class="menu-section" id="menu">
+        <h2 class="section-titlee">Menu</h2>
+
+        <div class="Menu-cards">
+          <div class="card">
+            <div class="card-info">
+              <img src="images/drinks/hot chocolate with coffe.jpg" alt="" />
+              <div>
+                <button class="btn" onclick="openPage_Drinks()">Drinks</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-info">
+              <img src="images/sweets/buncake.jpg" alt="" />
+              <div>
+                <button class="btn" onclick="openPage_Dessert()">
+                  Dessert
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-info">
+              <img src="images/breakfast/croissant with coffe .jpg" alt="" />
+              <div>
+                <button class="btn" onclick="openPage_Breakfast()">
+                  Breakfast
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-separator"></div>
+
+      <!-- Contact Us Section -->
+      <div class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                90th street, fifth settlement
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                info@Debugcoffewebsite.com
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                +0201029551441
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                Monday - Friday: 9:00 AM - 5:00 PM<br />
+              </li>
+              <li>
+                <i class="fas fa-globe"></i>
+                www.Debugcafe.com
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Form -->
+          <form action="#" class="contact-form">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+            <textarea
+              rows="5"
+              placeholder="Your feedback about Debug cafe"
+            ></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="C:\Users\CA\Documents\GitHub\Debug-Caf-website\images\robut (home ) -removebg-preview.png" alt="Coffee Cup">
-    </div>
-  </section>
-</body>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Debug Cafè</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </footer>
+  </body>
 </html>

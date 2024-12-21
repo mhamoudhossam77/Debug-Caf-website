@@ -10,7 +10,8 @@ body {
     justify-content: center;  
     align-items: center; 
     min-height: 100vh;  
-    background-color: #EEE5BF;
+    background: linear-gradient(135deg,#f0ebe2,#79533a);
+    
     overflow-x: hidden;  
 }
 
@@ -40,8 +41,8 @@ body {
 
  
 .card-info img {
-    width: 300px;  
-    height: 300px;  
+    width: 200px;  
+    height: 200px;  
     border-radius: 50%;  
     object-fit: cover;
 }
@@ -53,7 +54,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #030304;  
+    background-color: #6a4b3d;
     color: aliceblue;  
     font-size: 16px;
     border-radius: 25px;  
@@ -67,7 +68,7 @@ body {
 
  
 .card-info .btn:hover {
-    background-color: #ffffff;  
+    background-color: #472910; 
     color: #030304;  
     border: 2px solid #030304;  
 }
