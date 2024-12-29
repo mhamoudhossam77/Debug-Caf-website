@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+AU+VIC+Guides&family=Playwrite+MX+Guides&family=Playwrite+NL+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+AU+VIC+Guides&family=Playwrite+MX+Guides&family=Playwrite+NL+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Global Reset */
+ 
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +69,6 @@ body {
 .nav-menu a {
   text-decoration: none;
   color: #6c574f;
-  
   font-size: 22px;
   transition: color 0.3s ease;
   padding: 20px 20px;
@@ -400,7 +400,7 @@ footer {
   background: #472910;
 }
 
-/*  */
+/* product_card  */
 
 .listing {
   list-style: none;
