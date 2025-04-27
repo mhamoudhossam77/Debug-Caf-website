@@ -1,6 +1,128 @@
+<<<<<<< Updated upstream
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+AU+VIC+Guides&family=Playwrite+MX+Guides&family=Playwrite+NL+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+AU+VIC+Guides&family=Playwrite+MX+Guides&family=Playwrite+NL+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Global Reset */
+=======
+/*home padge style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #6a4b3d;
+    color: #333;
+  }
+  
+  /* (Logo) */
+  .logo {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a4b3d;
+  }
+  /*حجم ال logo*/
+  .logo img {
+    width: 50px; 
+    height: auto; 
+    max-height: 60px; 
+  }
+  /*debug cafe word*/
+  .logo span {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #6c574f;
+  }
+  
+  /* tool bar (Navigation Bar) */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 5%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-left: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #6c574f; 
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #251304;
+  }
+  
+  /* قسم الـ Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #f0ebe2, #79533a);
+    border-radius: 20px;
+    margin: 80px 10%; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-content {
+    max-width: 500px;
+  }
+  /*Debug your code with our Exceptional Coffee!*/
+  .hero-content h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #1a162c;
+  }
+  /*Debug Cafè*/
+  .hero-content p {
+    font: size 2px;;
+    margin-bottom: 20px;
+    color: #79533a;
+  }
+  /*Exceptional Coffee*/
+  .highlight {
+    color: #79533a; 
+    font-size: px;
+  }
+  /*buttons*/
+  .buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6a4b3d;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons .btn:hover {
+    background-color: #472910; /* لون عند التمرير */
+  }
+  
+>>>>>>> Stashed changes
  
 * {
   margin: 0;
