@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Drinks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: url("D:\\Debug-Caf-website\\images\\Menue_drinks.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 0 0 0;
+    }
+    .menu-title {
+      text-align: center;
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .menu-title:before,
+    .menu-title:after {
+      content: "";
+      display: inline-block;
+      width: 180px;
+      height: 2px;
+      background: #fff;
+      vertical-align: middle;
+      margin: 0 20px;
+    }
+    .menu-title:before { margin-left: 0; }
+    .menu-title:after { margin-right: 0; }
+    .menu-grid {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+    }
+    .menu-col {
+      flex: 1 1 0;
+      min-width: 350px;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+      position: relative;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .menu-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 18px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+    .menu-img img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .menu-info {
+      flex: 1;
+    }
+    .menu-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 2px 0;
+      color: #fff;
+    }
+    .menu-desc {
+      font-size: 0.98rem;
+      color: #e0e0e0;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    .menu-price {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 2px;
+      letter-spacing: 1px;
+    }
+    .order-btn {
+      background: #b86b43;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-left: 24px;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      text-decoration: none;
+    }
+    .order-btn:hover {
+      background: #a05a36;
+    }
+    @media (max-width: 900px) {
+      .menu-grid {
+        flex-direction: column;
+        gap: 0;
+      }
+      .menu-col {
+        min-width: 0;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 0 0 0;
+      }
+      .menu-title {
+        font-size: 2rem;
+      }
+      .menu-title:before,
+      .menu-title:after {
+        width: 60px;
+        margin: 0 8px;
+      }
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 16px;
+      }
+      .order-btn {
+        margin: 12px 0 0 0;
+        width: 100%;
+       
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="menu-title">Menu Drinks</div>
+    <div class="menu-grid">
+      
+      <div class="menu-col">
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipse 1.png" alt="Americano"></div>
+          <div class="menu-info">
+            <div class="menu-name">Americano</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet,</div>
+            <div class="menu-price">$10.00</div>
+          </div>
+      
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipse 2.png" alt="Doppio"></div>
+          <div class="menu-info">
+            <div class="menu-name">Doppio</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet, margin</div>
+            <div class="menu-price">$15.00</div>
+          </div>
+ 
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipse 3.png" alt="Latte"></div>
+          <div class="menu-info">
+            <div class="menu-name">Latte</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet, only padding</div>
+            <div class="menu-price">$18.00</div>
+          </div>
+        
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipes 4.png" alt="Espresso Conpana"></div>
+          <div class="menu-info">
+            <div class="menu-name">Espresso Conpana</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet, only marging</div>
+            <div class="menu-price">$23.00</div>
+          </div>
+          
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+      </div>
+     
+      <div class="menu-col">
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipse 5.png" alt="Cappuccino"></div>
+          <div class="menu-info">
+            <div class="menu-name">Cappuccino</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet,</div>
+            <div class="menu-price">$05.00</div>
+          </div>
+     
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipse 6.png" alt="Irish"></div>
+          <div class="menu-info">
+            <div class="menu-name">Irish</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet,</div>
+            <div class="menu-price">$7.00</div>
+          </div>
+          
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipse 7.png" alt="Espresso"></div>
+          <div class="menu-info">
+            <div class="menu-name">Espresso</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet, not margin</div>
+            <div class="menu-price">$26.00</div>
+          </div>
+          
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+        <div class="menu-item">
+          <div class="menu-img"><img src="images/Ellipse 8.png" alt="Mocha"></div>
+          <div class="menu-info">
+            <div class="menu-name">Mocha</div>
+            <div class="menu-desc">Lorem ipsum dolor sit amet</div>
+            <div class="menu-price">$50.00</div>
+          </div>
+        
+          <a href="Reservetion.html" class="order-btn">Order now</a>  
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

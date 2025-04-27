@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Debug Café</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #231a15 url("images/about_us.png") no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      position: relative;
+    }
+    .overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+     
+      z-index: 1;
+    }
+    .main-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      min-height: 100vh;
+      padding-top: 90px;
+      padding-left: 60px;
+      padding-right: 60px;
+      box-sizing: border-box;
+    }
+    .robot-img {
+        width: 420px;
+        min-width: 220px;
+        margin-right: 40px;
+        margin-top: 70px;
+        background: transparent;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    
+    .robot-img:hover {
+        transform: scale(1.1);  
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);  
+    }
+    
+    .about-section {
+      max-width: 900px;
+      margin-top: 40px;
+    }
+    .about-title {
+      color: #a97a5a;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      justify-self: center;
+    }
+    .about-text {
+      font-size: 1.45rem;
+      line-height: 1.6;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+      margin-bottom: 40px;
+    }
+    .social-icons {
+      margin-top: 30px;
+      font-size: 1.7rem;
+      color: #a97a5a;
+      display: flex;
+      gap: 30px;
+      justify-self: center;
+      
+    }
+    .social-icons a {
+      color: #a97a5a;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .social-icons a:hover {
+      color: #fff;
+    }
+    @media (max-width: 1000px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 40px;
+      }
+      .robot-img {
+        margin: 0 0 30px 0;
+        width: 180px;
+    
+      }
+      .about-section {
+        margin-top: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="main-content">
+    <img class="robot-img" src="D:\Debug-Caf-website\images\robot_about.png" alt="Robot">
+    <div class="about-section">
+      <div class="about-title">About Us</div>
+      <div class="about-text">
+        Welcome to Debug Café, the place where technology meets good taste! Enjoy an unforgettable cafe experience with a robot always at your service with a distinctive atmosphere inspired by the world of robotics and modern technology, where innovation meets comfort. Whether you are looking for the perfect start to your day or a place to cheer you up with a warm cup of coffee, we offer the most delicious hot and cold foods and drinks to suit all tastes. From freshly baked goods to light breakfasts, from your favorite coffee to refreshing drinks, we have everything you need to start your day or add a moment of relaxation to your busy day. Debug café is your favorite destination to enjoy and harmonize your time with 5-star service with robots!
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

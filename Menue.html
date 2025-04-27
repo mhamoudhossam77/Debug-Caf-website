@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: url("D:\\Debug-Caf-website\\images\\menue_back.png") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      min-height: 100vh;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      
+    }
+    h1 {
+      color: #fff;
+      font-size: 3.5rem;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .menu-options {
+      display: flex;
+      gap: 60px;
+      justify-content: center;
+    
+    }
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    .menu-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid #fff;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .menu-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .menu-btn {
+      background: #A0583C;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 36px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+    .menu-btn:hover {
+      background: #a97c50;
+    }
+    @media (max-width: 900px) {
+      .menu-options {
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Menu</h1>
+    <div class="menu-options">
+      <div class="menu-item">
+        <div class="menu-img">
+          <img src="D:\\Debug-Caf-website\\images\\drinks\\hot chocolate with coffe.jpg" alt="Drinks">
+        </div>
+       
+        <a href="Menue_Drinks.html" class="menu-btn">Drinks</a>  
+      </div>
+      <div class="menu-item">
+        <div class="menu-img">
+          <img src="D:\\Debug-Caf-website\\images\\sweets\\buncake.jpg" alt="Dessert">
+        </div>
+    
+        <a href="Menue_Desert.html" class="menu-btn">Dessert</a>  
+      </div>
+      <div class="menu-item">
+        <div class="menu-img">
+          <img src="D:\\Debug-Caf-website\\images\\breakfast\\croissant with coffe .jpg" alt="Breakfast">
+        </div>
+         
+        <a href="Menue_Breakfast.html" class="menu-btn">Breakfast</a>  
+      </div>
+    </div>
+  </div>
+</body>
+</html>

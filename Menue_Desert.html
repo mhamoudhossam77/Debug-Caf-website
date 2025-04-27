@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Dessert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: url( "D:\\Debug-Caf-website\\images\\desert_back.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .overlay {
+     
+      min-height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0; left: 0;
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 0 0 0;
+    }
+    .menu-title {
+      text-align: center;
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 38px;
+      position: relative;
+      color: #fff;
+    }
+    .menu-title:before,
+    .menu-title:after {
+      content: "";
+      display: inline-block;
+      width: 220px;
+      height: 3px;
+      background: #fff;
+      vertical-align: middle;
+      margin: 0 24px;
+      border-radius: 2px;
+    }
+    .menu-title:before { margin-left: 0; }
+    .menu-title:after { margin-right: 0; }
+    .menu-list {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 0;
+      width: 100%;
+    }
+    .menu-col {
+      width: 50%;
+      padding: 0 18px;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.18);
+      padding: 26px 0 26px 0;
+      position: relative;
+      min-height: 90px;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    .item-img {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 22px;
+      border: 2.5px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      background: #fff;
+      flex-shrink: 0;
+    }
+    .item-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .item-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+      color: #fff;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+    }
+    .item-desc {
+      font-size: 1.01rem;
+      font-weight: 400;
+      color: #e0e0e0;
+      margin-bottom: 7px;
+      text-transform: none;
+      line-height: 1.1;
+    }
+    .item-price {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0;
+      letter-spacing: 0.5px;
+    }
+    .order-btn {
+      background: #d17a4b;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 13px 32px;
+      font-size: 1.13rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-left: 22px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .order-btn:hover {
+      background: #b85e2e;
+    }
+    @media (max-width: 1100px) {
+      .container { max-width: 98vw; }
+      .menu-title:before, .menu-title:after { width: 100px; }
+    }
+    @media (max-width: 900px) {
+      .menu-list { flex-direction: column; }
+      .menu-col { width: 100%; padding: 0 8px; }
+      .menu-title:before, .menu-title:after { width: 60px; }
+    }
+    @media (max-width: 600px) {
+      .menu-title { font-size: 1.5rem; }
+      .item-title { font-size: 1rem; }
+      .order-btn { padding: 8px 12px; font-size: 0.95rem; }
+      .item-img { width: 38px; height: 38px; margin-right: 10px; }
+      .menu-item { padding: 14px 0; min-height: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="menu-title">Menu Dessert</div>
+    <div class="menu-list">
+      <div class="menu-col">
+        <div class="menu-item">
+          <img class="item-img" src="images/desert1.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Autumn Delight</div>
+            <div class="item-desc">FLUFFY GOLDEN PANCAKES TOPPED</div>
+            <div class="item-price">$10.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+        <div class="menu-item">
+          <img class="item-img" src="images/desert2.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Blueberry Bliss</div>
+            <div class="item-desc">soft pancakes loaded with blueberries</div>
+            <div class="item-price">$15.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+        <div class="menu-item">
+          <img class="item-img" src="images/desert3.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Nutty Berry Crunch</div>
+            <div class="item-desc">HEARTY OAT PANCAKES LAYERED</div>
+            <div class="item-price">$18.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+        <div class="menu-item">
+          <img class="item-img" src="images/desert4.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Golden Berry Dream</div>
+            <div class="item-desc">light and golden pancakes crowned</div>
+            <div class="item-price">$23.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+      </div>
+      <div class="menu-col">
+        <div class="menu-item">
+          <img class="item-img" src="images/desert5.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Choco-Banana Stack</div>
+            <div class="item-desc">CHOCOLATE PANCAKES WITH BANANA</div>
+            <div class="item-price">$10.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+        <div class="menu-item">
+          <img class="item-img" src="images/desert6.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Tropical Sunrise</div>
+            <div class="item-desc">coconut pancakes with pineapple, mango</div>
+            <div class="item-price">$15.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+        <div class="menu-item">
+          <img class="item-img" src="images/desert7.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Matcha Mellow</div>
+            <div class="item-desc">MATCHA PANCAKES</div>
+            <div class="item-price">$18.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+        <div class="menu-item">
+          <img class="item-img" src="images/desert8.png" alt="">
+          <div class="item-info">
+            <div class="item-title">Apple Cinnamon Crumble</div>
+            <div class="item-desc">pancakes with caramelized apples</div>
+            <div class="item-price">$23.00</div>
+          </div>
+          <a href="Reservation_desert.html" class="order-btn">Order now</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
