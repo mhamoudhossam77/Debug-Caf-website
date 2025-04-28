@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Debug Café</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Great+Vibes&display=swap"
+    rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Montserrat', Arial, sans-serif;
-      background: url("D:\\Debug-Caf-website\\images\\home_robot.png") no-repeat center center/cover;
+      background: url("images\\home_robot.png") no-repeat center center/cover;
       min-height: 100vh;
       color: #fff;
-      background-size: cover;  
-      background-attachment: fixed;  
-      background-position: center;  
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
     }
 
     .navbar {
@@ -53,7 +55,7 @@
 
     .navbar ul li a {
       color: #8d6e63;
-      text-decoration: none;  
+      text-decoration: none;
       display: block;
       padding: 10px;
     }
@@ -63,7 +65,7 @@
     }
 
     .navbar ul li a:hover {
-      color: #bcaaa4;  
+      color: #bcaaa4;
     }
 
     .hero {
@@ -72,7 +74,7 @@
       justify-content: space-between;
       padding: 60px 80px 0 80px;
       min-height: 80vh;
-     }
+    }
 
     .hero-content {
       max-width: 600px;
@@ -133,7 +135,7 @@
       width: 350px;
       height: auto;
       z-index: 2;
-     }
+    }
 
     .hero-image .steam {
       position: absolute;
@@ -144,7 +146,7 @@
       z-index: 3;
     }
 
-    
+
     .menu {
       display: none;
       padding: 40px;
@@ -152,12 +154,12 @@
       color: #333;
       margin-top: 20px;
       transition: transform 0.5s ease-in-out;
-      transform: translateY(-50px);  
+      transform: translateY(-50px);
     }
 
     .menu.show {
       display: block;
-      transform: translateY(0);  
+      transform: translateY(0);
     }
 
     @media (max-width: 900px) {
@@ -172,20 +174,22 @@
         margin-top: 30px;
       }
 
-      .hero-image img, .hero-image .steam {
+      .hero-image img,
+      .hero-image .steam {
         width: 180px;
       }
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar">
     <div class="logo">Debug Café</div>
     <ul>
-      <li><a href="Home.html">Home</a></li> 
-      <li><a href="About_us.html">About Us</a></li>  
-      <li><a href="Menue.html" id="menu-link">Menu</a></li>   
-      <li><a href="contact_us.html">Contact Us</a></li> 
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About_us.html">About Us</a></li>
+      <li><a href="Menue.html" id="menu-link">Menu</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
     </ul>
   </nav>
   <section class="hero">
@@ -193,30 +197,20 @@
       <h2>Exceptional Coffee</h2>
       <h1>Debug your code with our <br><span>Exceptional Coffee!</span></h1>
       <p>Welcome to Debug café with the strongest experience with a robot waiter where every bean tells a story.</p>
-      <a href=" Sign_in.html" class="btn">Sign in</a> 
+      <a href=" Sign_in.html" class="btn">Sign in</a>
     </div>
   </section>
 
- 
-  <div class="menu" id="menu-section">
-    <h2>Our Menu</h2>
-    <ul>
-      <li>Coffee - $5</li>
-      <li>Tea - $3</li>
-      <li>Sandwiches - $7</li>
-      <li>Pastries - $4</li>
-    </ul>
-  </div>
-
   <script>
- 
+
     const menuLink = document.getElementById('menu-link');
     const menuSection = document.getElementById('menu-section');
 
     menuLink.addEventListener('click', () => {
-     
+
       menuSection.classList.toggle('show');
     });
   </script>
 </body>
+
 </html>

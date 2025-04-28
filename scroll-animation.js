@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
   function openPage_Drinks() {
     window.location.href = "productcard.html"; 
   }
@@ -38,4 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function openPage_Dessert() {
     window.location.href = "DessertCard.html"; 
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".page").classList.add("show");
+});
+
+gsap.from(".page", { duration: 1, x: -100, opacity: 0 });
+
   
