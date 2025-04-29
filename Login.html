@@ -104,7 +104,6 @@
       margin-top: 0.5em;
       text-align: left;
       width: 100%;
-      
     }
     .signup-link a {
       color: #fff;
@@ -146,9 +145,9 @@
   <div class="container">
     <h1>Welcome Back!</h1>
     <p>Log in Your Account</p>
-    <form>
-      <input class="form-input" type="email" placeholder="Email" required>
-      <input class="form-input" type="password" placeholder="Password" required>
+    <form action="login.php" method="post">
+      <input class="form-input" type="email" name="email" placeholder="Email" required>
+      <input class="form-input" type="password" name="password" placeholder="Password" required>
       <button class="login-btn" type="submit">Log In</button>
     </form>
     <div class="signup-link">
